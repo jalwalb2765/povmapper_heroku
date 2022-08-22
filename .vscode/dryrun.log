@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/alexwalbridge/code/2_working_folder/karimstephan/povmapper_heroku'
+pip install -r requirements.txt
+make: Leaving directory `/Users/alexwalbridge/code/2_working_folder/karimstephan/povmapper_heroku'
+ 

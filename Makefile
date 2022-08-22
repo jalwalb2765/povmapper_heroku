@@ -5,10 +5,10 @@ install_requirements:
 	@pip install -r requirements.txt
 
 check_code:
-	@flake8 scripts/* povmapper_heroku/*.py
+	@flake8 scripts/* povmapper/*.py
 
 black:
-	@black scripts/* povmapper_heroku/*.py
+	@black scripts/* povmapper/*.py
 
 test:
 	@coverage run -m pytest tests/*.py
@@ -22,8 +22,8 @@ clean:
 	@rm -f .coverage
 	@rm -fr */__pycache__ */*.pyc __pycache__
 	@rm -fr build dist
-	@rm -fr povmapper_heroku-*.dist-info
-	@rm -fr povmapper_heroku.egg-info
+	@rm -fr povmapper-*.dist-info
+	@rm -fr povmapper.egg-info
 
 install:
 	@pip install . -U
@@ -53,3 +53,15 @@ pypi_test:
 
 pypi:
 	@twine upload dist/* -u $(PYPI_USERNAME)
+
+
+# ----------------------------------
+#      Frontend
+# ----------------------------------
+streamlit:
+	@streamlit run frontend.py
+# ----------------------------------
+#      API
+# ----------------------------------
+run_api:
+	uvicorn api.fast:app --reload
