@@ -30,7 +30,7 @@ tileurl = 'https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}@2x.png?access_
 
 #functioning login to EE (not applicable to docker)
 service_account = 'heroku@batch-883-povertymapper.iam.gserviceaccount.com.com'
-credentials = ee.ServiceAccountCredentials(service_account, 'api/credentials.json')
+credentials = ee.ServiceAccountCredentials(service_account, 'credentials.json')
 ee.Initialize(credentials)
 
 #not functioning login to EE (applicable to docker):
