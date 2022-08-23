@@ -11,9 +11,9 @@ twine
 wheel>=0.29
 
 # data science
-#numpy
+# numpy
 pandas
-#scikit-learn
+# scikit-learn
 # tensorflow
 
 # tests/linter
@@ -39,7 +39,7 @@ six>=1.14
 memoized-property
 # termcolor
 
-#frontend
+# frontend
 streamlit
 streamlit_folium
 folium
@@ -48,7 +48,7 @@ geopy
 
 # pickle-mixin
 
-#ee
+# ee
 # haversine
 # scikit-image
 # numpy
