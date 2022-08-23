@@ -7,3 +7,4 @@ raw_data/
 **/__pycache__/
 .env
 credentials.json
+*.json
