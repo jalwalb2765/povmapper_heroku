@@ -49,7 +49,7 @@ def frontend_manipulation(lat,lon, radius_):
 
 
 
-    url = 'https://povmapper-v0-4-p4pgsvggtq-ew.a.run.app/predict?'
+    url = 'https://povmapper-v0-5-p4pgsvggtq-ew.a.run.app/predict?'
     params = dict(lat=lat,lon=lon)
     response=requests.get(url, params=params)
     prediction= response.json()

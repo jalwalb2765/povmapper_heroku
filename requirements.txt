@@ -1,4 +1,4 @@
-keras
+# keras
 # tensorflow-macos==2.8.0; sys_platform == 'darwin' and 'ARM' in platform_version
 # tensorflow==2.8.0; sys_platform == 'darwin' and 'ARM' not in platform_version
 # tensorflow==2.8.0; sys_platform != 'darwin'
@@ -12,32 +12,32 @@ wheel>=0.29
 
 # data science
 #numpy
-#pandas
+pandas
 #scikit-learn
-tensorflow
+# tensorflow
 
 # tests/linter
-black
-coverage
-flake8
-pytest
-yapf
+# black
+# coverage
+# flake8
+# pytest
+# yapf
 
 # API lib
 gcsfs
-google-cloud-storage
+# google-cloud-storage
 earthengine-api
-mlflow
+# mlflow
 s3fs
-uvicorn
-fastapi
-scikit-image
+# uvicorn
+# fastapi
+# scikit-image
 haversine
 
 # utilities
 six>=1.14
 memoized-property
-termcolor
+# termcolor
 
 #frontend
 streamlit
@@ -46,10 +46,10 @@ folium
 geopy
 
 
-pickle-mixin
+# pickle-mixin
 
 #ee
-haversine
-scikit-image
-numpy
-earthengine-api
+# haversine
+# scikit-image
+# numpy
+# earthengine-api
